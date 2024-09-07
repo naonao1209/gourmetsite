@@ -1,0 +1,926 @@
+{% extends 'app/base.html' %}
+{% load static %}
+
+{% block meta_description %}
+    鎌倉と言えば歴史ある街並み、お寺、大仏など関東圏内でも屈指の観光地です。
+    そんな鎌倉に来たらぜひ立ち寄りたい場所　「小町通り」。
+    小町通りでは鎌倉観光を盛り上げてくれるグルメがいっぱい！<br>
+    今回は、鎌倉に来たら必ず食べて欲しいグルメスポットを
+    ❶食べ歩き編　❷イートイン編　❸デザート編で
+    厳選して3選ずつ用意しました。<br>
+    小町通りに訪れた際はぜひ参考にしてください！！<br>
+{% endblock %}
+
+{% block title %}
+【最新版】鎌倉小町通りグルメスポット厳選3選
+{% endblock %}
+   
+{% block content %}
+<!--ビッグイメージ-->
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-xs-12 cover-img" style="background-image:url(static/images/tabearuki1.jpg);">
+			<div class="cover-text text-center text-dark mask">
+                <h1 class="display-3 fw-bold">【最新版】鎌倉小町通りグルメスポット厳選3選</h1>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--鎌倉概要-->
+
+    <div class="container container-fluid">
+        <div class="row text-start mt-5">
+            <div class="col-xs-12">
+                <p class="fs-4">
+                    鎌倉と言えば歴史ある街並み、お寺、大仏など関東圏内でも屈指の観光地です。
+                    そんな鎌倉に来たらぜひ立ち寄りたい場所　「小町通り」。
+                    小町通りでは鎌倉観光を盛り上げてくれるグルメがいっぱい！<br>
+                    今回は、鎌倉に来たら必ず食べて欲しいグルメスポットを
+                    ❶食べ歩き編　❷イートイン編　❸デザート編で
+                    厳選して3選ずつ用意しました。<br>
+                    小町通りに訪れた際はぜひ参考にしてください！！<br>
+                </p>
+            </div>
+        </div>
+        <div class="row py-5">
+            <div class="col-md-12">
+                <div class="card w-100">
+                    <div class="card-body text-bg-dark">
+                      <p class="card-text">紹介店舗マップ</p>
+                    </div>
+                    <img src="{% static 'images/kamakuramap1.jpg' %}" class="card-img-top" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <div class="container mt-5">
+        <!--目次-->
+        <div class="row mx-2">
+            <!-- 目次メニュー -->
+            <nav id="toc" class="col-xs-10 col-md-6 border border-5 border-black p-4 ">
+                <div class="sticky-top">
+                    <h5>
+                        <i class="bi bi-list-ul"></i>
+                         目次 [
+                        <a href="#tocCollapse" class="toggle-link link-secondary" data-bs-toggle="collapse" aria-expanded="true" aria-controls="tocCollapse">
+                            非表示
+                        </a>
+                        ]</h5>
+                        <div class="collapse show" id="tocCollapse">
+                            <ul class="nav flex-column fs-4">
+                                <li class="nav-item">
+                                    <a class="nav-link active h5" href="#section1">❶ 食べ歩きフード編</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#section1-1">1-1. 「チーズカレーパン」　Giraffa(ジラッファ)
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#section1-2">1-2. 「おにぎり」　おにぎりこんが　←おすすめ <i class="bi bi-hand-thumbs-up-fill text-warning"></i></a>
+                                    
+                                </li>
+                                <li class="nav-item border-bottom border-2 border-black">
+                                    <a class="nav-link" href="#section1-3">1-3. 「ライ麦パン」　ライ麦ハウスベーカリー</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link h5" href="#section2">❷ イートイン（店内）編</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#section2-1">2-1. 「しらす丼」　秋本</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#section2-2">2-2. 「ハンバーガー」　ルーフトップス　←おすすめ <i class="bi bi-hand-thumbs-up-fill text-warning"></i></a>
+                                </li>
+                                <li class="nav-item border-bottom border-2 border-black">
+                                    <a class="nav-link" href="#section2-3">2-3. 「レトロカフェ」　ミルクホール</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link h5" href="#section3">❸ デザート編</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#section3-1">3-1. 「抹茶スイーツ」　もみじ茶屋 鎌倉小町通り</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#section3-2">3-2. 「お団子」　さくらの夢見屋 小町通り本店</a>
+                                </li>
+                                <li class="nav-item border-bottom border-2 border-black">
+                                    <a class="nav-link" href="#section3-3">3-3. 「クレープ」　コクリコクレープ店　←おすすめ <i class="bi bi-hand-thumbs-up-fill text-warning"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link h5" href="#section4">まとめ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- 記事の内容 -->
+    <div class="container mt-5">
+        <!--1に関する記事の説明-->
+        <div class="row my-5">
+            <div class="col-md-12 mb-5">
+                <div>
+                    <!--写真差し替え、文字を下に並べる-->
+                    <h2 id="section1" style="text-decoration: underline double;">❶ 食べ歩きフード編　　</h2>
+                </div>
+                <div class="container container-fluid mt-2 mb-4">
+                    <div class="row mb-5">
+                        <div class="col-md-12">
+                            <img src="{% static 'images/kamakura1.jpg' %}" class="img-fluid w-100" alt="...">
+                        </div>
+                        <div class="col-md-12">
+                            <p class="fs-4">
+                                小町通りにはさまざまな食べ歩きグルメがあります。<br>
+                                小腹が空いた時や観光地を巡りながら何か食べたい時、これらを食べれば満足間違いなしです！<br>
+                                それでは早速食べ歩き編から見ていきましょう！！<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--1-1.-->
+                <div class="border-bottom border-4 border-black">
+                    <h2 id="section1-1">1-1. 「チーズカレーパン」　Giraffa(ジラッファ)
+                    </h2>
+                </div>
+                <div class="container container-fluid mt-2 mb-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="fs-4">
+                                開発に１年かけたこだわりのカレーパン。<br>
+                                １日店舗最高販売数は1,500個という実績があり、カレーパングランプリの金賞受賞経験もあります！<br>
+                                数々のテレビ番組でも紹介されている人気店です。<br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-around">
+                        <div  class="col-md-6">
+                            <div class="img-container aspect-ratio-box2">
+                                <img src="{% static 'images/curry1.jpg' %}" class="img-fluid" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-4 mt-md-0">
+                            <div class="img-container aspect-ratio-box2">
+                                <img src="{% static 'images/curry2.jpg' %}" class="img-fluid" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row text-start fs-6">
+                        <p><a href="https://giraffacurrypan.jp/">出典</a></p>
+                    </div>
+                    <div class="row">
+                        <p class="fs-4">
+                            テイクアウト専門で、窓口で注文して受け取り、食べ歩きグルメにぴったりなお店です。<br>
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 mt-4 p-2 fs-4">
+                            <p class="text-decoration-underline">店舗情報</p>
+                            <div class="mx-4">
+                                <p>店舗名：ジラッファ 鎌倉小町通り　（Giraffa）</p>
+                                <p>住所：〒248-0006　神奈川県鎌倉市小町2丁目2-21</p>
+                                <p>営業時間：10:00 – 18:00　
+                                    ※定休日：無休</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mx-2">
+                        <div class="d-md-flex justify-content-start">
+                            <div class="mt-2 mt-md-0">
+                                <a href="https://tabelog.com/kanagawa/A1404/A140402/14081641/" role="button" class="btn btn-warning" style="width: 10rem;">
+                                    食べログはこちら
+                                </a>
+                            </div>
+                            <div class="mt-2 mt-md-0 ms-md-2 ms-sm-0">
+                                <a href="https://www.instagram.com/giraffa.kamakurakomachi/" role="button" class="btn btn-danger" style="width: 10rem;">
+                                    Instagramはこちら
+                                </a>
+                            </div>
+                            <div class="mt-2 mt-md-0 ms-md-2 ms-sm-0">
+                                <a href="https://x.com/GiraffaKamakura?s=09" role="button" class="btn btn-dark" style="width: 10rem;">
+                                    Xはこちら
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--map-->
+                    <div class="row my-5">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3255.4124749149864!2d139.549236675234!3d35.32057744970238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601845bb2916d811%3A0xd2503293d0d989d6!2z44K444Op44OD44OV44KhIOmOjOWAieWwj-eUuumAmuOCiuW6lw!5e0!3m2!1sja!2sjp!4v1724104782456!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                
+                <!--1-2.-->
+                <div class="border-bottom border-4 border-black mt-5 pt-5">
+                    <h2 id="section1-2">1-2. 「おにぎり」　おにぎりこんが
+                        　←おすすめ <i class="bi bi-hand-thumbs-up-fill text-warning"></i>
+                    </h2>
+                </div>
+                <div class="container container-fluid mt-2 mb-4">
+                    <div class="row">
+                        <div class="col-md-12 fs-4">
+                            <p>
+                                名店 東京大塚ぼんご直伝のおにぎり。<br>
+                                日本一のおにぎりと言ったらぼんご、そのぼんごが唯一暖簾分けを許したお店がここ「こんが」。<br>
+                                現在、羽田空港国際線ターミナル店、赤坂Bizタワー店、蒲田店と店舗拡大が進んでいる「こんが」が鎌倉にもついにオープン！<br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div  class="col-md-6">
+                            <div class="img-container aspect-ratio-box">
+                                <img src="{% static 'images/onigiri1.jpg' %}" class="img-fluid" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-4 mt-md-0">
+                            <div class="img-container aspect-ratio-box">
+                                <img src="{% static 'images/onigiri2.jpg' %}" class="img-fluid" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row fs-6">
+                        <p><a href="https://fbih.jp/">出典</a></p>
+                    </div>
+                    <div class="row">
+                        <p class="fs-4">
+                            連日大行列のおにぎり屋さんはテイクアウトのみならずイートインもあり、食べ歩きグルメに限らず少し休みたい方にもぴったりなお店です。<br>
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 mt-4 p-2 fs-4">
+                            <p class="text-decoration-underline">店舗情報</p>
+                            <div class="mx-4">
+                                <p>店舗名：おにぎりこんが　鎌倉店</p>
+                                <p>住所：神奈川県鎌倉市小町2-12-27鶴ヶ丘会館1F</p>
+                                <p>営業時間：7:00 – 19:00　
+                                    ※定休日：第二火曜日、第四火曜日</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mx-2">
+                        <div class="d-md-flex justify-content-start">
+                            <div>
+                                <a href="#" role="button" class="btn btn-primary" style="width: 10rem;">
+                                    HPはこちら
+                                </a>
+                            </div>
+                            <div class="mt-2 mt-md-0 ms-md-2 ms-sm-0">
+                                <a href="#" role="button" class="btn btn-warning" style="width: 10rem;">
+                                    食べログはこちら
+                                </a>
+                            </div>
+                            <div class="mt-2 mt-md-0 ms-md-2 ms-sm-0">
+                                <a href="#" role="button" class="btn btn-danger" style="width: 10rem;">
+                                    Instagramはこちら
+                                </a>
+                            </div>
+                            <div class="mt-2 mt-md-0 ms-md-2 ms-sm-0">
+                                <a href="#" role="button" class="btn btn-dark" style="width: 10rem;">
+                                    Xはこちら
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--map-->
+                    <div class="row my-5">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3255.4124749149864!2d139.549236675234!3d35.32057744970238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601845bb2916d811%3A0xd2503293d0d989d6!2z44K444Op44OD44OV44KhIOmOjOWAieWwj-eUuumAmuOCiuW6lw!5e0!3m2!1sja!2sjp!4v1724104782456!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <!--1-3.-->
+                <div class="border-bottom border-4 border-black">
+                    <h2 id="section1-3">1-3. 「ライ麦パン」　ライ麦ハウスベーカリー
+                    </h2>
+                </div>
+                <div class="container container-fluid mt-2 mb-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="fs-4">
+                                日本でも珍しいフィンランドパンの専門店。<br>
+                                店主が腕を振るうライ麦ハウスベーカーリーは地元住民にも愛されている人気店。<br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="img-container aspect-ratio-box">
+                                <img src="{% static 'images/raimugipan1.jpg' %}" class="img-fluid" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-4 mt-md-0">
+                            <div class="img-container aspect-ratio-box">
+                                <img src="{% static 'images/raimugipan2.jpg' %}" class="img-fluid" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p><a href="https://raimugihausu.stores.jp/">出典</a></p>
+                    </div>
+                    <div class="row">
+                        <p class="fs-4">
+                            北欧発祥のシナモンロールはライ麦ハウスベーカリーでも人気メニューとなっています。<br>
+                            お店の前のベンチも利用可能なので、ベンチに座って一息ついても良いかもしれません。
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 mt-4 p-2 fs-4">
+                            <p class="text-decoration-underline">店舗情報</p>
+                            <div class="mx-4">
+                                <p>店舗名：ライ麦ハウスベーカリー</p>
+                                <p>住所：神奈川県鎌倉市小町2丁目2-8-23</p>
+                                <p>営業時間：10:00 – 17:30　
+                                    ※定休日：月曜日</p>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="row mx-2">
+                        <div class="d-md-flex justify-content-start">
+                            <div class="mt-2 mt-md-0">
+                                <a href="https://tabelog.com/kanagawa/A1404/A140402/14068317/" role="button" class="btn btn-warning" style="width: 10rem;">
+                                    食べログはこちら
+                                </a>
+                            </div>
+                            <div class="mt-2 mt-md-0 ms-md-2 ms-sm-0">
+                                <a href="https://www.instagram.com/raimugi_house/?hl=ja" role="button" class="btn btn-danger" style="width: 10rem;">
+                                    Instagramはこちら
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--map-->
+                    <div class="row my-5">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4134.808841822755!2d139.54964232277834!3d35.32168416450377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601845c1301aaaab%3A0x9f7c6a5f2dcb476d!2z44Op44Kk6bqm44OP44Km44K544OZ44O844Kr44Oq44O8!5e0!3m2!1sja!2sjp!4v1724105811818!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>     
+                </div>
+            </div>
+        </div>
+        <!--2に関する記事の説明-->
+        <div class="row mt-5">
+            <div class="col-md-12 mb-2">
+                <div>
+                    <h2 id="section2" style="text-decoration: underline double;">❷ イートイン（店内）編　　</h2>
+                </div>
+                <div class="container container-fluid mt-2 mb-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img src="{% static 'images/eat_in_1.jpg' %}" class="img-fluid  w-100" alt="...">
+                        </div>
+                        <div class="col-md-12">
+                            <p><a href="https://www.tototo.biz/staffblog/restaurant_design_cozy/">出典</a></p>
+                        </div>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col-md-12">
+                            <p class="fs-4">
+                                小町通りには食べ歩きだけでなく、お食事処やカフェなどもたくさんあります。<br>
+                                ゆっくりご飯を食べたい時や、観光で疲れた時、これらのお店でゆっくりするのはいかがでしょうか。<br>
+                                それではイートイン編をご覧ください。<br>
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!--2-1.-->
+                <div class="border-bottom border-4 border-black">
+                    <h2 id="section2-1">2-1. 「しらす丼」　秋本
+                    </h2>
+                </div>
+                <div class="container container-fluid mt-2 mb-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="fs-4">
+                                湘南と言ったらやはり「しらす」、
+                                鎌倉でも新鮮なしらすが食べられると言えばここ「秋本」。<br>
+                                木のぬくもりを感じる落ち着いた和の空間で、観光の休息も十分に取ることもできます。<br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="img-container aspect-ratio-box">
+                                <img src="{% static 'images/shirasu1.jpg' %}" class="img-fluid" alt="..."> 
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-4 mt-md-0">
+                            <div class="img-container aspect-ratio-box">
+                                <img src="{% static 'images/shirasu2.jpg' %}" class="img-fluid" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p><a href="http://www.akimoto-kamakura.com/menu.html">出典</a></p>
+                    </div>
+                    <div class="row">
+                        <p class="fs-4">
+                            人気No.1のメニューはやはり鎌倉野菜の天ぷらとしらす丼を楽しめる「鎌倉づくし」。<br>
+                            数量限定で提供される「生しらす丼」も人気の高いメニューとのこと、一度ご賞味あれ！
+                        </p>
+                    </div>
+                    <div class="row">    
+                        <div class="col-md-12 mt-4 p-2 fs-4">
+                            <p class="text-decoration-underline">店舗情報</p>
+                            <div class="mx-4">
+                                <p>店舗名：秋本</p>
+                                <p>住所：神奈川県鎌倉市小町1丁目6-15 アイザ鎌倉3F</p>
+                                <p>営業時間：11:00 – 15:30, 17:00 – 20:00　
+                                    ※定休日：木曜日</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mx-2">
+                        <div class="d-md-flex justify-content-start">
+                            <div class="mt-2 mt-md-0">
+                                <a href="https://tabelog.com/kanagawa/A1404/A140402/14003222/dtlmap/" role="button" class="btn btn-warning" style="width: 10rem;">
+                                    食べログはこちら
+                                </a>
+                            </div>
+                            <div class="mt-2 mt-md-0 ms-md-2 ms-sm-0">
+                                <a href="https://www.instagram.com/akimoto.kamakura/" role="button" class="btn btn-danger" style="width: 10rem;">
+                                    Instagramはこちら
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--map-->
+                    <div class="row my-5">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3255.4460512360024!2d139.548550575234!3d35.319743449747804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601845c178fce0b3%3A0x6190464c9adddc50!2z6aOf5LqL5YemIOeni-acrA!5e0!3m2!1sja!2sjp!4v1724106120895!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <!--2-2.-->
+                <div class="border-bottom border-4 border-black">
+                    <h2 id="section2-2">2-2. 「ハンバーガー」　ルーフトップス
+                        　←おすすめ <i class="bi bi-hand-thumbs-up-fill text-warning"></i>
+                    </h2>
+                </div>
+                <div class="container container-fluid mt-2 mb-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="fs-4">
+                                牛肉100%の自慢のパテが魅力の絶品ハンバーガーが堪能できるハンバーガー店。<br>
+                                ステッカーやポスターで埋められた壁はアメリカンな雰囲気を感じさせる空間となっています。<br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="img-container aspect-ratio-box">
+                                <img src="{% static 'images/hambrug1.jpg' %}" class="img-fluid" alt="...">
+                            </div>
+                            <p><a href="https://sites.google.com/halyard.jp/rooftops/burgers">出典1</a></p>
+                        </div>
+                        <div class="col-md-6 mt-4 mt-md-0">
+                            <div class="img-container aspect-ratio-box">
+                                <img src="{% static 'images/hambrug2.jpg' %}" class="img-fluid" alt="...">
+                            </div>
+                            <p><a href="https://tabelog.com/kanagawa/A1404/A140402/14058323/dtlrvwlst/B449244950/">出典2</a>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <p class="fs-4">
+                            ランチタイムにはポテトやサラダ、ドリンクなどが付くセットもあり、お得！<br>
+                            夜には夜景も楽しめるデートスポットとしてもおすすめです。
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 mt-4 p-2 fs-4">
+                            <p class="text-decoration-underline">店舗情報</p>
+                            <div class="mx-4">
+                                <p>店舗名：ルーフトップス</p>
+                                <p>住所：神奈川県鎌倉市小町1-6-17 鎌倉マークビル6F</p>
+                                <p>営業時間：11:00 – 21:00　
+                                    ※定休日：水曜日</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mx-2">
+                        <div class="d-md-flex justify-content-start">
+                            <div class="mt-2 mt-md-0">
+                                <a href="https://tabelog.com/kanagawa/A1404/A140402/14058323/" role="button" class="btn btn-warning" style="width: 10rem;">
+                                    食べログはこちら
+                                </a>
+                            </div>
+                            <div class="mt-2 mt-md-0 ms-md-2 ms-sm-0">
+                                <a href="https://www.instagram.com/rooftops_kamakura/" role="button" class="btn btn-danger" style="width: 10rem;">
+                                    Instagramはこちら
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--map-->
+                    <div class="row my-5">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3255.4570620256154!2d139.54867157523398!3d35.31946994976282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601845c17e7e980f%3A0x2ad1e9d8980ae393!2sROOFTOPS!5e0!3m2!1sja!2sjp!4v1724106343789!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <!--2-3.-->
+                <div class="border-bottom border-4 border-black">
+                    <h2 id="section2-3">2-3. 「レトロカフェ」　ミルクホール
+                    </h2>
+                </div>
+                <div class="container container-fluid mt-2 mb-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="fs-4">
+                                昭和51年（1976年）に創業した老舗。<br>
+                                レトロな雰囲気を醸し出した店内は大正浪漫を感じる喫茶店です。<br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="img-container aspect-ratio-box">
+                                <img src="{% static 'images/milkhole1.jpg' %}" class="img-fluid" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-4 mt-md-0">
+                            <div class="img-container aspect-ratio-box">
+                                <img src="{% static 'images/milkhole2.jpg' %}" class="img-fluid  w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row">
+                            <p><a href="https://tabelog.com/kanagawa/A1404/A140402/14000202/dtlrvwlst/B112039553/?cid=icotto_presses">出典</a></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p class="fs-4">
+                            名物と言えばなんといってもハヤシライスで、素朴な味わいが昔懐かしさを感じさせます。<br>
+                            その他にも喫茶店ならではのプリンは絶品、デザートが食べたければここでも食べれます！<br>
+                        </p>
+                    </div>
+                    <div class="row">   
+                        <div class="col-md-12 mt-4 p-2 fs-4">
+                            <p class="text-decoration-underline">店舗情報</p>
+                            <div class="mx-4">
+                                <p>店舗名：ミルクホール</p>
+                                <p>住所：神奈川県鎌倉市小町2丁目2-3-8</p>
+                                <p>営業時間：（平日）11:00 – 20:30 （土日祝）11:00 – 21:30　
+                                    ※定休日：不定休</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mx-2">
+                        <div class="d-md-flex justify-content-start">
+                            <div class="mt-2 mt-md-0">
+                                <a href="https://tabelog.com/kanagawa/A1404/A140402/14000202/" role="button" class="btn btn-warning" style="width: 10rem;">
+                                    食べログはこちら
+                                </a>
+                            </div>
+                            <div class="mt-2 mt-md-0 ms-md-2 ms-sm-0">
+                                <a href="https://www.instagram.com/milkhall1976/" role="button" class="btn btn-danger" style="width: 10rem;">
+                                    Instagramはこちら
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--map-->
+                    <div class="row my-5">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3255.3893535533434!2d139.54886557523395!3d35.3211517496711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601845c10f885ccd%3A0xed8c8568ed4f7345!2zQ2FmZSDjg5_jg6vjgq_jg5vjg7zjg6s!5e0!3m2!1sja!2sjp!4v1724106518343!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--3に関する記事の説明-->
+        <div class="row mt-5 pt-5">
+            <div class="col-md-12 mb-2">
+                <div>
+                    <h2 style="text-decoration: underline double;" id="section3">❸ デザート編　　</h2>
+                </div>
+                <div class="container container-fluid mt-2 mb-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img src="{% static 'images/sweet1.jpg' %}" class="img-fluid W-50" alt="...">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p><a href="https://co-trip.jp/article/604594">出典</a></p>
+                    </div>
+                    <div class="row">
+                        <p class="fs-4">
+                            観光中、観光後、また食事の後などに食べたくなるスイーツ。<br>
+                            鎌倉小町通りにもたくさんスイーツが美味しいお店があります。
+                            たくさんのお店の中から厳選に厳選した３つをご紹介します。<br>
+                            それではデザート編をご覧ください。<br>
+                        </p>
+                    </div>
+                </div>
+                <!--3-1.-->
+                <div class="border-bottom border-4 border-black">
+                    <h2 id="section3-1">3-1. 「抹茶スイーツ」　もみじ茶屋 鎌倉小町通り
+                    </h2>
+                </div>
+                <div class="container container-fluid mt-2 mb-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="fs-4">
+                                京都に本店のある抹茶をメインにしたスイーツカフェ。<br>
+                                京都の老舗から取り寄せる上質な抹茶をたっぷり使用した「宇治抹茶ティラミス」は絶品！<br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="img-container aspect-ratio-box">
+                                <img src="{% static 'images/momijichaya1.jpg' %}" class="img-fluid w-100" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-4 mt-md-0">
+                            <div class="img-container aspect-ratio-box">
+                                <img src="{% static 'images/momijichaya2.jpg' %}" class="img-fluid w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                            <p><a href="https://shop.create-restaurants.co.jp/1200/">出典</a></p>
+                    </div>
+                    <div class="row">
+                        <p class="fs-4">
+                            店内は明るく和モダンなスタイルで落ち着いた空間です。<br>
+                            観光の後のホッと一息にぴったりです。<br>
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 mt-4 p-2 fs-4">
+                            <p class="text-decoration-underline">店舗情報</p>
+                            <div class="mx-4">
+                                <p>店舗名：もみじ茶屋 鎌倉小町通り</p>
+                                <p>住所：神奈川県鎌倉市小町1-4-26 WELLHOUSE 1F</p>
+                                <p>営業時間：10:00 – 18:00　
+                                    ※定休日：無休</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mx-2">
+                        <div class="d-md-flex justify-content-start">
+                            <div class="mt-2 mt-md-0">
+                                <a href="https://tabelog.com/kanagawa/A1404/A140402/14066117/?msockid=071aa4a6b6db69fa34d4b077b7836865" role="button" class="btn btn-warning" style="width: 10rem;">
+                                    食べログはこちら
+                                </a>
+                            </div>
+                            <div class="mt-2 mt-md-0 ms-md-2 ms-sm-0">
+                                <a href="https://www.instagram.com/momiji_komachi/" role="button" class="btn btn-danger" style="width: 10rem;">
+                                    Instagramはこちら
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--map-->
+                    <div class="row my-5">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10701.381621652756!2d139.54100186228035!3d35.32633996996994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601845c0b5afffff%3A0x4e133e61a9cc5030!2z44KC44G_44GY6Iy25bGLIOmOjOWAieWwj-eUuumAmuOCig!5e0!3m2!1sja!2sjp!4v1724106787843!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <!--3-2.-->
+                <div class="border-bottom border-4 border-black">
+                    <h2 id="section3-2">3-2. 「お団子」　さくらの夢見屋 小町通り本店
+                    </h2>
+                </div>
+                <div class="container container-fluid mt-2 mb-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="fs-4">
+                                華やかなお団子がメインのお店。<br>
+                                お団子と言えばみたらしやあんこですが、さくらの夢見屋で人気なのは写真映えする「四色団子」！<br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="img-container aspect-ratio-box">
+                                <img src="{% static 'images/dango1.jpg' %}" class="img-fluid" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-4 mt-md-0">
+                            <div class="img-container aspect-ratio-box">
+                                <img src="{% static 'images/dango2.jpg' %}" class="img-fluid" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p><a href="https://www.italiantomato.co.jp/brand/yumemiya/">出典</a></p>
+                    </div>
+                    <div class="row">
+                        <p class="fs-4">
+                            種類も豊富で迷うこと間違いなしです。<br>
+                            また店内にはイートインスペースもある為、小休憩も可能です。<br>
+                        </p>
+                    </div>
+                    <div class="row">    
+                        <div class="col-md-12 mt-4 p-2 fs-4">
+                            <p class="text-decoration-underline">店舗情報</p>
+                            <div class="mx-4">
+                                <p>店舗名：さくらの夢見屋 小町通り本店</p>
+                                <p>住所：神奈川県鎌倉市小町2-7-34</p>
+                                <p>営業時間：10:00 – 18:00　
+                                    ※定休日：－</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mx-2">
+                        <div class="d-md-flex justify-content-start">
+                            <div class="mt-2 mt-md-0">
+                                <a href="https://tabelog.com/kanagawa/A1404/A140402/14028007/dtlphotolst/smp2/" role="button" class="btn btn-warning" style="width: 10rem;">
+                                    食べログはこちら
+                                </a>
+                            </div>
+                            <div class="mt-2 mt-md-0 ms-md-2 ms-sm-0">
+                                <a href="https://www.instagram.com/sakuranoyumemiya/" role="button" class="btn btn-danger" style="width: 10rem;">
+                                    Instagramはこちら
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--map-->
+                    <div class="row my-5">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3255.3818317073105!2d139.54729218127613!3d35.32133857930146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601845c117d6f397%3A0x723e53dbed95e4ca!2z44GV44GP44KJ44Gu5aSi6KaL5bGLIOWwj-eUuumAmuOCiuacrOW6lw!5e0!3m2!1sja!2sjp!4v1724107011467!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <!--3-3.-->
+                <div class="border-bottom border-4 border-black">
+                    <h2 id="section3-3">3-3. 「クレープ」　コクリコクレープ店
+                        　←おすすめ <i class="bi bi-hand-thumbs-up-fill text-warning"></i>
+                    </h2>
+                </div>
+                <div class="container container-fluid mt-2 mb-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="fs-4">
+                                創業から50年以上続くクレープ店。<br>
+                                食べログスイーツEAST百名店にも選ばれる名店です。<br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="img-container aspect-ratio-box">
+                                <img src="{% static 'images/creap1.jpg' %}" class="img-fluid" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-4 mt-md-0">
+                            <div class="img-container aspect-ratio-box">
+                                <img src="{% static 'images/creap2.jpg' %}" class="img-fluid" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p><a href="https://tabelog.com/kanagawa/A1404/A140402/14002246/dtlphotolst/smp2/">出典</a></p>
+                    </div>
+                    <div class="row">
+                        <p class="fs-4">
+                            人気メニューと言えばやはり「バターシュガー」で、シンプルながらも人気と至高の一品です。<br>
+                            こちらのお店にもイートインスペースがあり、食べ歩きにも小休憩にもぴったりなお店です！<br>
+                        </p>
+                    </div>
+                    <div class="row">   
+                        <div class="col-md-12 mt-4 p-2 fs-4">
+                            <p class="text-decoration-underline">店舗情報</p>
+                            <div class="mx-4">
+                                <p>店舗名：コクリコクレープ店</p>
+                                <p>住所：神奈川県鎌倉市雪ノ下1-6-4</p>
+                                <p>営業時間：10:30 – 18:00　
+                                    ※定休日：－
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mx-2">
+                        <div class="d-md-flex justify-content-start">
+                            <div class="mt-2 mt-md-0">
+                                <a href="https://tabelog.com/kanagawa/A1404/A140402/14002246/" role="button" class="btn btn-warning" style="width: 10rem;">
+                                    食べログはこちら
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--map-->
+                    <div class="row my-5">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3255.3315587837737!2d139.55035347523403!3d35.32258724959295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601845c0d710919b%3A0x5d62af3f693dbf22!2z44Kz44Kv44Oq44Kz44Kv44Os44O844OX5bqX!5e0!3m2!1sja!2sjp!4v1724107072203!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5 pt-5">
+            <div class="col-md-12 mb-2">
+                <div class="text-decoration-underline">
+                    <h2 id="section4" style="text-decoration: underline double;">まとめ　　</h2>
+                </div>
+                <div class="container container-fluid mt-5 mb-4">
+                    <div class="row my-5">
+                        <div class="col-md-6">
+                            <div class="img-container aspect-ratio-box">
+                                <img src="{% static 'images/matome1.jpg' %}" class="img-fluid w-100" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-4 mt-md-0">
+                            <div class="img-container aspect-ratio-box">
+                                <img src="{% static 'images/matome2.jpg' %}" class="img-fluid w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">    
+                        <div class="col-md-12">
+                            <p class="fs-4">
+                                今回紹介したお店はいかがでしたでしょうか。
+                                食欲をそそられたんじゃないでしょうか？<br>
+                                ❶ 食べ歩き編　❷ イートイン編　❸ デザート編
+                                それぞれ厳選したお店を３つずつ紹介しましたが、これらのお店以外にもまだまだたくさん美味しいお店はあります。<br>
+                                皆様の鎌倉観光を小町通りのグルメで楽しさ倍増にしましょう！！<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+
+
+        
+{% endblock %}
+
+{% block footer %}
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="d-md-flex justify-content-around">
+            <ul class="list-unstyled text-start">
+                <li class="nav-item mb-2">
+                    <a class="nav-link active h5" href="#section1">
+                        <span class="text-decoration-underline">❶ 食べ歩きフード編</span>
+                    </a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link" href="#section1-1">
+                        1-1. 「チーズカレーパン」
+                        Giraffa(ジラッファ)
+                    </a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link" href="#section1-2">
+                        1-2. 「おにぎり」
+                        おにぎりこんが
+                    </a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link" href="#section1-3">
+                        1-3. 「ライ麦パン」
+                        ライ麦ハウスベーカリー
+                    </a>
+                </li>
+            </ul>
+            <ul class="list-unstyled text-start">
+                <li class="nav-item mb-2">
+                    <a class="nav-link h5" href="#section2">
+                        <span class="text-decoration-underline">❷ イートイン（店内）編</span>
+                    </a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link" href="#section2-1">
+                        2-1. 「しらす丼」秋本
+                    </a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link" href="#section2-2">
+                        2-2. 「ハンバーガー」
+                        ルーフトップス
+                    </a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link" href="#section2-3">
+                        2-3. 「レトロカフェ」
+                        ミルクホール
+                    </a>
+                </li>
+            </ul>
+            <ul class="list-unstyled text-start">
+                <li class="nav-item mb-2">
+                    <a class="nav-link h5" href="#section3">
+                        <span class="text-decoration-underline">❸ デザート編</span> 
+                    </a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link" href="#section3-1">
+                        3-1. 「抹茶スイーツ」
+                        もみじ茶屋 鎌倉小町通り
+                    </a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link" href="#section3-2">
+                        3-2. 「お団子」
+                        さくらの夢見屋 小町通り本店
+                    </a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link" href="#section3-3">
+                        3-3. 「クレープ」
+                        コクリコクレープ店</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
